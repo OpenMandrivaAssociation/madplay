@@ -10,7 +10,6 @@ Source0:	http://prdownloads.sourceforge.net/mad/%{name}-%{version}.tar.bz2
 License:	GPL
 Group:		Sound
 URL:		http://www.underbit.com/products/mad/
-BuildRoot:	%_tmppath/%name-%version-%release-root
 BuildRequires:  libmad-devel >= 0.15.0b
 BuildRequires:  libid3tag-devel >= 0.15.0b
 BuildRequires:  libesound-devel
