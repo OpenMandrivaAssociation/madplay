@@ -1,6 +1,6 @@
 %define name 	madplay
 %define version 0.15.2b
-%define release %mkrel 4
+%define release %mkrel 6
 
 Summary:	Command line MPEG audio player based on libmad 
 Name:		%{name}
