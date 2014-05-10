@@ -1,6 +1,6 @@
 %define name 	madplay
 %define version 0.15.2b
-%define release 7
+%define release 8
 
 Summary:	Command line MPEG audio player based on libmad 
 Name:		%{name}
@@ -41,7 +41,7 @@ rm -rf %buildroot/%{_datadir}/locale/en
 %find_lang %{name}
 
 %files -f %{name}.lang
-%doc COPYING README CREDITS TODO TODO
+%doc COPYING README CREDITS TODO 
 %{_bindir}/*
 %{_mandir}/man1/*
 
