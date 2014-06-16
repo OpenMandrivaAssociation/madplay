@@ -1,21 +1,15 @@
-%define name 	madplay
-%define version 0.15.2b
-%define release 8
-
 Summary:	Command line MPEG audio player based on libmad 
-Name:		%{name}
-Version:		%{version}
-Release:		%{release}
-Source0:		http://prdownloads.sourceforge.net/mad/%{name}-%{version}.tar.bz2
-License:		GPL
+Name:		madplay
+Version:	0.15.2b
+Release:	9
+Source0:	http://prdownloads.sourceforge.net/mad/%{name}-%{version}.tar.bz2
+License:	GPL
 Group:		Sound
 URL:		http://www.underbit.com/products/mad/
 BuildRequires:  pkgconfig(mad) >= 0.15.0b
 BuildRequires:  pkgconfig(id3tag) >= 0.15.0b
 BuildRequires:  pkgconfig(esound)
-
-Provides:	mad = %{EVRD}
-Obsoletes:	mad < 0.14
+%rename		mad
 
 %description
 madplay is a command-line MPEG audio decoder and player based on the
@@ -37,7 +31,7 @@ tags, as written by tools like `normalize'.
 %install
 %makeinstall
 # this is an invalid locale dir
-rm -rf %buildroot/%{_datadir}/locale/en
+rm -rf %{buildroot}/%{_datadir}/locale/en
 %find_lang %{name}
 
 %files -f %{name}.lang
