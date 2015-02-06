@@ -1,7 +1,7 @@
 Summary:	Command line MPEG audio player based on libmad 
 Name:		madplay
 Version:	0.15.2b
-Release:	9
+Release:	10
 Source0:	http://prdownloads.sourceforge.net/mad/%{name}-%{version}.tar.bz2
 License:	GPL
 Group:		Sound
