@@ -5,7 +5,7 @@ Release:	10
 Source0:	http://prdownloads.sourceforge.net/mad/%{name}-%{version}.tar.bz2
 License:	GPL
 Group:		Sound
-URL:		http://www.underbit.com/products/mad/
+URL:		https://www.underbit.com/products/mad/
 BuildRequires:  pkgconfig(mad) >= 0.15.0b
 BuildRequires:  pkgconfig(id3tag) >= 0.15.0b
 BuildRequires:  pkgconfig(esound)
